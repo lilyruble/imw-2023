@@ -1,0 +1,52 @@
+
+/* Adobe Font - SneakerScript */
+
+.shake {
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    font-size: 72px;
+    font-family: "sneakers-script", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    transition: font-size 200px ease;
+}
+.shake:hover {
+    font-size: 200px;
+    transform: rotate(360deg);
+}
+
+/* Google Font - Russo One */
+
+.bounce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    font-size: 72px;
+    font-family: 'Russo One', sans-serif;
+}
+
+/* Custom Font - Bespoke */ 
+
+@font-face {
+    font-family: 'Bespoke';
+    src: url('fonts/Bespoke-qC_WedRY3J.eot');
+    src: url('fonts/Bespoke-qC_WedRY3J.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Bespoke-qC_WedRY3J.woff') format('woff'),
+       url('fonts/Bespoke-qC_WedRY3J.ttf') format('truetype'),
+       url('fonts/Bespoke-qC_WedRY3J.svg') format('svg');
+  }
+
+.water-wave {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 72px;
+    font-family: 'Bespoke', sans-serif;
+}
