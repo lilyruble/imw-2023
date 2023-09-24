@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 2:Grid</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        #grid-layout {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-columns: repeat(15, 1fr);
+            grid-template-rows: repeat(15, 1fr);
+        }
+        .beige-1 {
+            border-bottom: 15px solid #4B4444 ;
+            border-right: 15px solid #4B4444;
+            background-color: #FFF9E7;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-column-end: 4;
+            grid-row-end: 5
+        }
+        .red-child {
+            background-color: #E94734;
+            grid-column-start: 4;
+            grid-row-start: 1;
+            grid-column-end: span 12;
+            grid-row-end: span 11;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="grid-layout">
+        <div class="beige-1"></div>
+        <div class="red-child"></div>
+        <div class="beige-rect-1"></div>
+        <div class="blue"></div>
+        <div class="beige-rect-2"></div>
+        <div class="beige-2"></div>
+        <div class="yellow"></div>
+        
+     
+    </div>
+
+
+</body>
+
+
+</html>

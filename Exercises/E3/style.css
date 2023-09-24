@@ -1,34 +1,66 @@
 
 /* Adobe Font - SneakerScript */
-
-.shake {
-    border: 5px solid black;
-    display: flex;
+.spin {
+    display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
     font-size: 72px;
-    font-family: "sneakers-script", sans-serif;
+    font-family: "sneakers-script", Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-style: normal;
-    transition: font-size 200px ease;
+    color: aquamarine;
+    overflow:hidden;
+    transition: 250ms ease; transform: 1s ease;
 }
-.shake:hover {
+.spin:hover {
     font-size: 200px;
-    transform: rotate(360deg);
+    color: blue;
+    transform: rotate(360deg)
 }
 
 /* Google Font - Russo One */
-
 .bounce {
-    display: flex;
+    display:flex; 
     justify-content: center;
     align-items: center;
     height: 100vh;
     
     font-size: 72px;
+    color: red;
+    font-family: 'Russo One', 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+span:hover{
     font-family: 'Russo One', sans-serif;
+    position: relative;
+    display: inline-block;
+    color: red;
+    letter-spacing: 25px;
+    animation: bounceanim 10s infinite;
+    animation-delay: calc(.10s * var(--i)ease);
+}
+
+@keyframes bounceanim{
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-80px);
+    }
+}
+
+.bounce:hover {
+    color: blue;
+    animation-name: change;
+    animation-duration: 10s ease;
+    animation-iteration-count: infinite;
+}
+@keyframes change {
+    0% {color: red;}
+    25% {color: yellow}
+    75% {color: green}
+    100% {color: blue}
 }
 
 /* Custom Font - Bespoke */ 
@@ -41,12 +73,18 @@
        url('fonts/Bespoke-qC_WedRY3J.ttf') format('truetype'),
        url('fonts/Bespoke-qC_WedRY3J.svg') format('svg');
   }
-
-.water-wave {
+.fade-out {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    height: 100vh;
+
+    transition: 250ms ease;
     font-size: 72px;
-    font-family: 'Bespoke', sans-serif;
+    font-family:'Bespoke','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+}
+.fade-out:hover {
+    opacity: 0;
 }
