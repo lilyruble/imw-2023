@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5D5EE;
+    font-family: helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 12px;
+}
+
+header {
+    width: 700px;
+    height: 103px;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    width: 700px;
+    background: white;
+    border: 1px solid black;
+}
+
+.site-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.hero-section {
+    width: 700px;
+    height: 347px;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    padding: 45px 45px;
+}
+
+.hero-cta {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.intro-section {
+    width: 700px;
+    height: 113px;
+    border: 1px solid black;
+    padding: 37px 153px 37px 20px;
+}
+
+.nav-links {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info-section-columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-section {
+    height: 319px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+
+.page {
+    width: 700px;
+    margin: auto;
+}
+
+footer {
+    width: 700px;
+    height: 129px;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.site-title-footer {
+    font-size: 18px;
+    width: 136px;
+    height: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-links {
+    margin-right: 25px;
+}
+
+.footer-link {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Exercise 2: Grid</title>
     <style>
-        body{
+        body {
             background-color: white;
             padding: 50px;
         }
+
         /* Painting 1 - Piet Mondrian*/
         #grid-layout {
             display: grid;
@@ -15,8 +17,9 @@
             grid-template-columns: repeat(15, 1fr);
             grid-template-rows: repeat(15, 1fr);
         }
+
         .beige-1 {
-            border-bottom: 15px solid #4B4444 ;
+            border-bottom: 15px solid #4B4444;
             border-right: 15px solid #4B4444;
             background-color: #FFF9E7;
             grid-column-start: 1;
@@ -24,6 +27,7 @@
             grid-column-end: 4;
             grid-row-end: 5;
         }
+
         .red-child {
             background-color: #E94734;
             grid-column-start: 4;
@@ -31,6 +35,7 @@
             grid-column-end: span 12;
             grid-row-end: span 11;
         }
+
         .beige-rect-1 {
             border-bottom: 15px solid #4B4444;
             border-right: 15px solid #4B4444;
@@ -40,6 +45,7 @@
             grid-column-end: span 3;
             grid-row-end: span 7;
         }
+
         .blue {
             border-right: 15px solid #4B4444;
             background-color: #3A94C0;
@@ -48,6 +54,7 @@
             grid-column-end: span 3;
             grid-row-end: span 4;
         }
+
         .beige-rect-2 {
             border-top: 15px solid #4B4444;
             border-right: 15px solid #4B4444;
@@ -57,6 +64,7 @@
             grid-column-end: span 11;
             grid-row-end: span 4;
         }
+
         .beige-2 {
             border-top: 15px solid #4B4444;
             background-color: #FFF9E7;
@@ -65,6 +73,7 @@
             grid-column-end: span 1;
             grid-row-end: span 2;
         }
+
         .yellow {
             border-top: 15px solid #4B4444;
             background-color: #F7DE00;
@@ -84,381 +93,423 @@
             grid-template-columns: repeat(10, 1fr);
             grid-template-rows: repeat(10, 1fr);
         }
+
         .mint-1 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 1;
             grid-column-end: 2;
             grid-row-end: 2;
         }
+
         .mint-2 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 2;
             grid-column-end: span 0;
             grid-row-end: span 1;
         }
+
         .mint-3 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 3;
             grid-column-end: span 0;
             grid-row-end: span 1;
         }
+
         .mint-4 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 4;
             grid-column-end: span 0;
             grid-row-end: span 1;
         }
+
         .mint-5 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 5;
             grid-column-end: span 0;
             grid-row-end: span 1;
         }
+
         .mint-6 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 6;
             grid-column-end: span 0;
             grid-row-end: span 1;
         }
+
         .mint-7 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 7;
             grid-column-end: span 0;
             grid-row-end: span 1;
         }
+
         .mint-8 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 8;
             grid-column-end: span 0;
             grid-row-end: span 1;
         }
+
         .mint-9 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 9;
             grid-column-end: span 0;
             grid-row-end: span 1;
         }
-        .mint-9-2{
+
+        .mint-9-2 {
             border-right: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 1;
             grid-row-start: 10;
             grid-column-end: span 0;
             grid-row-end: span 1;
         }
+
         .mint-10 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 6;
             grid-row-start: 4;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-11 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 7;
             grid-row-start: 4;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-12 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 8;
             grid-row-start: 4;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-13 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 6;
             grid-row-start: 5;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-14 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 7;
             grid-row-start: 5;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-15 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 8;
             grid-row-start: 5;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-16 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 6;
             grid-row-start: 6;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-17 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 7;
             grid-row-start: 6;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-18 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 8;
             grid-row-start: 6;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-19 {
             border-right: 5px solid black;
             border-bottom: 10px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 6;
             grid-row-start: 7;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-20 {
             border-right: 5px solid black;
             border-bottom: 10px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 7;
             grid-row-start: 7;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-21 {
             border-right: 10px solid black;
             border-bottom: 10px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 8;
             grid-row-start: 7;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-22 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 6;
             grid-row-start: 8;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-23 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 7;
             grid-row-start: 8;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-24 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 8;
             grid-row-start: 8;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-25 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 6;
             grid-row-start: 9;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-26 {
             border-right: 5px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 7;
             grid-row-start: 9;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-27 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 8;
             grid-row-start: 9;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-28 {
             border-right: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 6;
             grid-row-start: 10;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-29 {
             border-right: 5px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 7;
             grid-row-start: 10;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .mint-30 {
             border-right: 10px solid black;
-            background-color:#CADCCE;
+            background-color: #CADCCE;
             grid-column-start: 8;
             grid-row-start: 10;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
-        
-        
+
+
         .grey-1 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
             grid-row-start: 1;
             grid-column-end: 3;
             grid-row-end: 2;
         }
+
         .grey-2 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
             grid-row-start: 2;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .grey-3 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
             grid-row-start: 3;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .grey-4 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
             grid-row-start: 4;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .grey-5 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
             grid-row-start: 5;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .grey-6 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
             grid-row-start: 6;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .grey-7 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
             grid-row-start: 6;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .grey-8 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
             grid-row-start: 7;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .grey-9 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
             grid-row-start: 8;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .grey-10 {
             border-right: 10px solid black;
             border-bottom: 5px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
-            grid-row-start:9;
+            grid-row-start: 9;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .grey-11 {
             border-right: 10px solid black;
-            background-color:#B6CBC4;
+            background-color: #B6CBC4;
             grid-column-start: 2;
-            grid-row-start:10;
+            grid-row-start: 10;
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .cream-1 {
             border-right: 10px solid black;
             border-bottom: 10px solid black;
@@ -468,6 +519,7 @@
             grid-column-end: span 3;
             grid-row-end: span 7;
         }
+
         .cream-2 {
             background-color: #E9EDD6;
             grid-column-start: 9;
@@ -475,6 +527,7 @@
             grid-column-end: span 3;
             grid-row-end: span 7;
         }
+
         .blue-1 {
             border-bottom: 10px solid black;
             background-color: #021CB1;
@@ -483,6 +536,7 @@
             grid-column-end: span 5;
             grid-row-end: span 3;
         }
+
         .yellow-1 {
             border-right: 10px solid black;
             background-color: #DAAF24;
@@ -492,8 +546,8 @@
             grid-row-end: span 4;
         }
 
-    /*Painting 3 - Piet Mondrian */
-    #grid-layout-3 {
+        /*Painting 3 - Piet Mondrian */
+        #grid-layout-3 {
             margin-top: 100px;
             display: grid;
             width: 500px;
@@ -501,6 +555,7 @@
             grid-template-columns: repeat(13, 1fr);
             grid-template-rows: repeat(20, 1fr);
         }
+
         .black-1 {
             border-right: 10px solid black;
             background-color: #040205;
@@ -509,6 +564,7 @@
             grid-column-end: span 4;
             grid-row-end: span 2;
         }
+
         .light-grey {
             border-right: 10px solid black;
             border-bottom: 10px solid black;
@@ -518,6 +574,7 @@
             grid-column-end: span 4;
             grid-row-end: span 10;
         }
+
         .red-box {
             border-bottom: 10px solid black;
             background-color: #E10205;
@@ -526,6 +583,7 @@
             grid-column-end: span 9;
             grid-row-end: span 8;
         }
+
         .black-2 {
             border-right: 10px solid black;
             background-color: #040205;
@@ -534,6 +592,7 @@
             grid-column-end: span 1;
             grid-row-end: span 1;
         }
+
         .neon-yellow {
             border-right: 10px solid black;
             background-color: #FAF963;
@@ -542,6 +601,7 @@
             grid-column-end: span 1;
             grid-row-end: span 7;
         }
+
         .silver-1 {
             border-right: 10px solid black;
             background-color: #CDCDD5;
@@ -550,6 +610,7 @@
             grid-column-end: span 3;
             grid-row-end: span 8;
         }
+
         .silver-2 {
             border-right: 10px solid black;
             border-bottom: 10px solid black;
@@ -559,6 +620,7 @@
             grid-column-end: span 8;
             grid-row-end: span 4;
         }
+
         .silver-3 {
             border-right: 10px solid black;
             border-bottom: 10px solid black;
@@ -568,6 +630,7 @@
             grid-column-end: span 8;
             grid-row-end: span 4;
         }
+
         .med-grey {
             border-right: 10px solid black;
             background-color: #DEDAD7;
@@ -576,6 +639,7 @@
             grid-column-end: span 6;
             grid-row-end: span 4;
         }
+
         .white {
             border-bottom: 10px solid black;
             background-color: #EEF3F2;
@@ -584,6 +648,7 @@
             grid-column-end: span 6;
             grid-row-end: span 8;
         }
+
         .navy-blue {
             background-color: #060855;
             grid-column-start: 11;
@@ -591,14 +656,11 @@
             grid-column-end: span 4;
             grid-row-end: span 4;
         }
-        
-
-    
-    
     </style>
 </head>
+
 <body>
-<!--Recreation of Composition with Red, Blue and Yellow by Piet Mondrian 
+    <!--Recreation of Composition with Red, Blue and Yellow by Piet Mondrian 
         https://www.wikiart.org/en/piet-mondrian/composition-with-red-blue-and-yellow-1930-->
 
     <div id="grid-layout">
@@ -608,9 +670,9 @@
         <div class="blue"></div>
         <div class="beige-rect-2"></div>
         <div class="beige-2"></div>
-        <div class="yellow"></div>  
+        <div class="yellow"></div>
     </div>
-<!--Recreation of Composition with half values by Theo van Doesburg
+    <!--Recreation of Composition with half values by Theo van Doesburg
     https://www.wikiart.org/en/theo-van-doesburg/composition-with-half-values-1928
     -->
 
@@ -664,23 +726,23 @@
         <div class="yellow-1"></div>
     </div>
 
-<!--Recreation of Tableau I by Piet Mondrian
+    <!--Recreation of Tableau I by Piet Mondrian
 https://www.piet-mondrian.org/tableau-i.jsp
 -->
 
-<div id="grid-layout-3">
-    <div class="black-1"></div>
-    <div class="light-grey"></div>
-    <div class="black-2"></div>
-    <div class="neon-yellow"></div>
-    <div class="silver-1"></div>
-    <div class="red-box"></div>
-    <div class="silver-2"></div>
-    <div class="silver-3"></div>
-    <div class="med-grey"></div>
-    <div class="white"></div>
-    <div class="navy-blue"></div>
-</div>
+    <div id="grid-layout-3">
+        <div class="black-1"></div>
+        <div class="light-grey"></div>
+        <div class="black-2"></div>
+        <div class="neon-yellow"></div>
+        <div class="silver-1"></div>
+        <div class="red-box"></div>
+        <div class="silver-2"></div>
+        <div class="silver-3"></div>
+        <div class="med-grey"></div>
+        <div class="white"></div>
+        <div class="navy-blue"></div>
+    </div>
 
 </body>
 
