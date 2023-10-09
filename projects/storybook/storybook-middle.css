@@ -1,5 +1,5 @@
 .walls {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     border-bottom: 175px solid #C98E6C;
     border-left: 250px solid transparent;
@@ -10,13 +10,13 @@
 
 .walls::before {
     content: "";
-    position: absolute;
-    top: -690px;
-    left: -265px;
+    position: fixed;
+    top: -10px;
+    left: 0;
     border-bottom: 175px solid #D4C9D9;
     border-left: 250px solid transparent;
     border-right: 250px solid transparent;
     height: 0;
-    width: 100%;
+    width: 70%;
     transform: rotate(180deg);
 }

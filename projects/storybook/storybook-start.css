@@ -22,8 +22,8 @@ body {
 }
 
 .museum {
-    position: relative;
-    top: 200px;
+    position: fixed;
+    top: 280px;
     width: 700px;
     height: 400px;
     background: #C6C2C2;
@@ -40,9 +40,9 @@ body {
 }
 
 .roof-triangle-right {
-    position: relative;
-    bottom: 325px;
-    left: 370px;
+    position: fixed;
+    top: -45px;
+    left: 850px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -51,9 +51,9 @@ body {
 }
 
 .roof-triangle-left {
-    position: relative;
-    top: -525px;
-    left: -78px;
+    position: fixed;
+    top: -45px;
+    left: 400px;
     width: 0;
     height: 0;
     border-style: solid;
@@ -63,9 +63,8 @@ body {
 }
 
 .roof-triangle-bottom {
-    position: absolute;
-    top: -125px;
-    left: -78px;
+    position: fixed;
+    top: 155px;
     border-radius: 5px;
     width: 875px;
     height: 70px;
@@ -76,9 +75,8 @@ body {
 }
 
 .roof-base {
-    position: absolute;
-    top: -55px;
-    left: -50px;
+    position: fixed;
+    top: 225px;
     border-radius: 5px;
     border: 3px solid black;
     width: 800px;
@@ -87,10 +85,10 @@ body {
 }
 
 .step-1 {
-    position: relative;
+    position: fixed;
+    top: 675px;
     width: 800px;
     height: 50px;
-    left: -50px;
     background: #DADADA;
     border-radius: 3px;
     border: 3px solid black;
@@ -120,15 +118,13 @@ body {
     border: 3px solid black;
 }
 
-
+/*
 .column-1 {
-    position: relative;
+    position: fixed;
     width: 45px;
     height: 375px;
     background: #DADADA;
     border: 3px solid black;
-    left: -720px;
-    top: 762px;
 }
 
 .column-1::before {
@@ -158,13 +154,13 @@ body {
 }
 
 .column-2 {
-    position: relative;
+    position: fixed;
     width: 45px;
     height: 375px;
     background: #DADADA;
     border: 3px solid black;
-    left: -550px;
-    top: 387px;
+    left: 0;
+    top: 0;
 }
 
 .column-2::before {
@@ -194,13 +190,11 @@ body {
 }
 
 .column-3 {
-    position: relative;
+    position: fixed;
     width: 45px;
     height: 375px;
     background: #DADADA;
     border: 3px solid black;
-    left: -180px;
-    top: 12px;
 }
 
 .column-3::before {
@@ -230,13 +224,11 @@ body {
 }
 
 .column-4 {
-    position: relative;
+    position: fixed;
     width: 45px;
     height: 375px;
     background: #DADADA;
     border: 3px solid black;
-    left: -10px;
-    top: -363px;
 }
 
 .column-4::before {
@@ -263,4 +255,4 @@ body {
     border-radius: 3px;
     left: -15px;
     top: 365px;
-}
+}*/
