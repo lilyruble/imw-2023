@@ -1,22 +1,342 @@
+body {
+    background-color: #B792BD;
+}
+
+
 .walls {
     position: fixed;
     bottom: 0;
-    border-bottom: 175px solid #C98E6C;
+    border-bottom: 20vh solid #C98E6C;
     border-left: 250px solid transparent;
     border-right: 250px solid transparent;
     height: 0;
-    width: 70%;
+    width: 70vw;
 }
 
 .walls::before {
     content: "";
     position: fixed;
-    top: -10px;
-    left: 0;
-    border-bottom: 175px solid #D4C9D9;
+    top: 1px;
+    left: 5px;
+    border-bottom: 20vh solid #9f7aa5;
     border-left: 250px solid transparent;
     border-right: 250px solid transparent;
     height: 0;
-    width: 70%;
+    width: 70vw;
     transform: rotate(180deg);
+}
+
+.walls::after {
+    content: "";
+    background-color: #D4C9D9;
+    height: 60vh;
+    width: 70vw;
+    position: absolute;
+    transform: translate(0, -100%);
+}
+
+
+
+
+
+.frame {
+    width: 600px;
+    height: 350px;
+    background-color: #FAEE59;
+    border: 20px solid #80321A;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+
+.main {
+    width: 175px;
+    height: 100px;
+    background-color: #F43F35;
+    position: absolute;
+    left: 600px;
+    top: 360px;
+}
+
+.main::before {
+    content: "";
+    width: 30px;
+    height: 110px;
+    background-color: #F43F35;
+    position: absolute;
+    top: 100px;
+    left: 90px;
+}
+
+.main::after {
+    content: "";
+    width: 30px;
+    height: 110px;
+    background-color: #F43F35;
+    position: absolute;
+    top: 100px;
+    left: 145px;
+}
+
+.ear {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 50px solid #F43F35;
+    position: absolute;
+    top: 310px;
+    left: 700px;
+}
+
+.ear::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 50px solid #F43F35;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.mouth {
+    width: 80px;
+    height: 35px;
+    background-color: #F43F35;
+    border-radius: 3px;
+    position: absolute;
+    top: 350px;
+    left: 750px;
+    transform: rotate(-20deg);
+}
+
+.mouth::before {
+    content: "";
+    width: 75px;
+    height: 35px;
+    background-color: #F43F35;
+    border-radius: 3px;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    transform: rotate(25deg);
+}
+
+.main-2 {
+    width: 175px;
+    height: 100px;
+    background-color: #F43F35;
+    position: absolute;
+    left: 1050px;
+    top: 400px;
+    transform: rotate(5deg);
+}
+
+.main-2::before {
+    content: "";
+    width: 25px;
+    height: 80px;
+    background-color: #F43F35;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+}
+
+.main-2::after {
+    content: "";
+    width: 25px;
+    height: 75px;
+    background-color: #F43F35;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+.ear-2 {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #F43F35;
+    position: absolute;
+    top: 350px;
+    left: 1070px;
+    transform: rotate(5deg);
+}
+
+.ear-2::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 45px solid #F43F35;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.mouth-2 {
+    width: 100px;
+    height: 45px;
+    background-color: #F43F35;
+    border-radius: 3px;
+    position: absolute;
+    top: 370px;
+    left: 970px;
+    transform: rotate(35deg);
+}
+
+.mouth-2::after {
+    content: "";
+    width: 90px;
+    height: 40px;
+    background-color: #F43F35;
+    border-radius: 3px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    transform: rotate(-25deg);
+}
+
+.halftone {
+    background-color: #EB7729;
+    width: 600px;
+    height: 50px;
+    border-top: 10px solid black;
+    position: absolute;
+    bottom: 0;
+}
+
+.detail {
+    width: 30px;
+    height: 10px;
+    background-color: black;
+    border-radius: 3px;
+    position: absolute;
+    top: 365px;
+    left: 850px;
+    transform: rotate(-25deg);
+}
+
+.detail::before {
+    content: "";
+    width: 20px;
+    height: 10px;
+    background-color: black;
+    border-radius: 3px;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    transform: rotate(35deg);
+}
+
+.detail::after {
+    content: "";
+    width: 35px;
+    height: 10px;
+    background-color: black;
+    border-radius: 3px;
+    position: absolute;
+    top: -20px;
+    left: -5px;
+    transform: rotate(-25deg);
+}
+
+.detail-2 {
+    width: 40px;
+    height: 10px;
+    background-color: black;
+    border-radius: 3px;
+    position: absolute;
+    top: 400px;
+    left: 900px;
+    transform: rotate(25deg);
+}
+
+.detail-2::before {
+    content: "";
+    width: 35px;
+    height: 10px;
+    background-color: black;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    transform: rotate(-30deg);
+}
+
+.detail-2::after {
+    content: "";
+    width: 30px;
+    height: 15px;
+    background-color: black;
+    border-radius: 3px;
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    transform: rotate(30deg);
+}
+
+.border {
+    width: 600px;
+    height: 350px;
+    border: 20px solid #80321A;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+
+.artist {
+    background-color: whitesmoke;
+    border: 3px solid black;
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    top: 610px;
+    left: 750px;
+    padding: 10px;
+}
+
+
+a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: black;
+}
+
+
+.text {
+    z-index: 1;
+    position: relative;
+    left: 300px;
+    top: 250px;
+}
+
+h1 {
+    font-family: 'Special Elite', serif;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+h3 {
+    font-family: 'Special Elite', serif;
+    font-size: 14px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8px;
 }
