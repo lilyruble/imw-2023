@@ -1,117 +1,127 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-  	<meta name="viewport" content="width=device-width, initial-zoom:1.0">
-  	<meta charset="utf-8">
-    <title>Process Page Template</title>
-    <style>
-        /* Move all CSS to a stylesheet */
-        * { /* Remove default browser spacing */
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            margin: 100px; /* Add spacing around the entire page */ 
-            font-size: 12px; /* Setting baseline font size */ 
-        }
 
-        /* Start of text sizes */
-        h1 {
-            font-size: 4em;
-        }
-        h2 {
-            font-size: 3em;
-        }
-        p {
-            font-size: 2em;
-            line-height: 1.5em;
-        }
-        figcaption {
-            font-size: 1.25em;
-        }
-        /* End of text sizes */
+<head>
+    <meta name="viewport" content="width=device-width, initial-zoom:1.0">
+    <meta charset="utf-8">
+    <title>Process: Poster</title>
+    <link rel="stylesheet" type="text/css" href="Process.css">
+</head>
 
-        /* Start of spacing and layout */
-        h2, p, figure, figcaption {
-            margin-bottom: 40px;
-        }
-        img {
-            margin-bottom: 10px;
-        }
-        .process-template {
-            width: 40%; /* Set the width of the template to 60% of the viewport. */
-            margin: auto; /* Center align the template by adding auto margins to the left and right */
-        }
-        .title {
-            margin-bottom: 100px; /* Add spacing to the bottom of the title div */
-        }
-
-        .section {
-            margin-bottom: 100px;
-        }
-        /* End of spacing and layout */
-
-        /* Adding media queries for page to adapts to tablet and mobile devices */
-        @media (max-width: 991px) {
-            .process-template {
-                width: 60%;
-            }
-        }
-
-        @media (max-width:767px) {
-            body {
-                margin: 40px;
-                font-size: 10px;
-            }
-            .process-template {
-                width: 100%;
-            }
-        }
-
-    </style>
-  </head>
-  <body>
+<body>
     <div class="process-template">
         <!-- Start of title -->
         <div class="title">
-            <h1>Page Title</h1>
+            <h1>Lily's Poster Process</h1>
         </div>
         <!-- End of title -->
         <!-- Start of content -->
         <div class="content">
             <!-- Start of a section -->
             <div class="section">
-                <h2>Section Title</h2>
+                <h2>Inspiration
+                </h2>
                 <p>
-                    This is a paragraph section where you can place your writing such as how you framed the project, what inspired you, what kind of research did you do, how did your idea evolve, what were key points of your refinement process, etc. Each paragraph will need to go into a separate paragraph tag.
+                    I chose the Black Panther Film Festival event because I really enjoyed the idea of creating a poster
+                    design for a movie. I also thought I could add a lot of character based on the content.
+                    <br><br>
+                    I was largely inspired by retro fonts and a militant look for typefaces. I chose the Adobe Font
+                    Milka because it had a nice decorative and geometrical elements that created a cool font that
+                    reminded me of the 60’s era. I went with futura bold condensed for the headers and futura bookface
+                    for the paragraphs. I chose these san serif fonts for the subcopy because I wanted to pair the
+                    decorative title with a simple and legible typeface that felt relevant to that time period as well.
+                    <br><br>
+                    I knew I wanted it to have stark contrast so I went with black as the background and white text to
+                    make the copy pop. However, I knew I wanted to have color to emphasize certain content so I took
+                    inspiration from the Black Panthers colors from the 1960s.
+
                 </p>
                 <!-- Start of a section -->
                 <!-- Start of image with caption -->
                 <figure>
-                  <img src="https://via.placeholder.com/600x300/000000/FFFFFF/?text=Replace+this+placeholder+image" alt="This text should describe the image" width="100%">
-                  <figcaption>Caption text for image if needed</figcaption>
+                    <img src="poster process/moodboard.png" alt="various images used for inspiration" width="100%">
+                    <figcaption>Posters from the documentaries and retro-esque Typography designs used for my
+                        inspiraation</figcaption>
+                </figure>
+                <figure>
+                    <img src="poster process/typefaces.png" alt="Adobe Font Typefaces" width="100%">
+                    <figcaption>The two options I chose for the typefaces</figcaption>
                 </figure>
                 <!-- End of image with caption -->
             </div>
             <!-- End of a section -->
             <!-- Start of a new section -->
             <div class="section">
-                <h2>Another Section Title</h2>
+                <h2>Process: Figma
+                </h2>
                 <p>
-                    This is a paragraph section where you can place your writing such as how you framed the project, what inspired you, what kind of research did you do, how did your idea evolve, what were key points of your refinement process, etc. Each paragraph will need to go into a separate paragraph tag.
+                    In the beginning process I decided to start out with grid with only columns so I can get a better
+                    understanding of the vertical spacing on the frame. I tried out different layouts for the title, but
+                    ultimately aimed for a rule of thirds layout ratio. With the title being ⅓ and the subcopy taking up
+                    the rest of the page.
+                    <br><br>
+                    Figma also allowed me to figure out consistent sizing for my headers and body copy in regard
+                    building hierarchy. It helped me think out the line height and different weights for specific
+                    elements.
                 </p>
                 <!-- Start of a section -->
                 <!-- Start of image with caption -->
                 <figure>
-                  <img src="https://via.placeholder.com/600x300/000000/FFFFFF/?text=Replace+this+placeholder+image" alt="This text should describe the image" width="100%">
-                  <figcaption>Caption text for image if needed</figcaption>
+                    <img src="poster process/grid 1.png" alt="Grid Layout" width="100%">
+                    <figcaption>The first version with column grid only</figcaption>
+                </figure>
+                <figure>
+                    <img src="poster process/grid.png" alt="Grid Layout" width="100%">
+                    <figcaption>The second version with full grid</figcaption>
                 </figure>
                 <!-- End of image with caption -->
             </div>
             <!-- End of a new section -->
+            <div class="section">
+                <h2>Process: HTML and CSS</h2>
+                <p>
+                    A lot of the learning process involved playing with the vh and vw feature to make it responsive with
+                    the webpage dimensions changing if expanded. I also experimented with fixed margins so that text
+                    would be aligned closely with the figma file. I also tested out different ratios of vh and vw to
+                    create a consistent hiearchy.
+                    <br><br>
+                    This project also got me more comfortable using the span and break feature in html so I could
+                    customize individual elements within the text. I also gained a better understanding of flex and grid
+                    and used it to keep my sections accurately divided.
+
+                </p>
+            </div>
+            <div class="section">
+                <h2>Process: Feedback</h2>
+                <p>
+                    After receiving feedback I decided to utilize slight hover animations to play with the color palette
+                    but also show intention of a clickable link. This is in comparison to having static color on the
+                    movie titles and I think it adds more clarity that it is a link.
+                    <br><br>
+                    I also changed the CTA button text to be more cohesive with the size of the button and rearranged
+                    the order of some of the content based on other movie posters. Prof. Ha also noted that the body
+                    copy was too small to read. So I changed it from Futura condensed medium to a wider and thicker
+                    version called Futura bookface. I wanted my body copy to be even more legible so I increased the
+                    size too based on suggestion.
+
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                    <img src="poster process/feedback.png" alt="Pdf file with feedback for poster" width="100%">
+                    <figcaption>Orginal Poster marked up with feedback</figcaption>
+                </figure>
+                <figure>
+                    <img src="poster process/black and color.png" alt="Black and white and colored versions of poster"
+                        width="100%">
+                    <figcaption>Black and white version and colored version</figcaption>
+                </figure>
+                <!-- End of image with caption -->
+            </div>
         </div>
         <!-- End of content -->
     </div>
-  </body>
+</body>
+
 </html>
