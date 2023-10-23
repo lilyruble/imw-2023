@@ -39,7 +39,7 @@ function color(e) {
 //Solution for Increase
 
 const content = document.getElementById("increaseText");
-const text = 20;
+let text = 20;
 function Increase() {
     if (text < 120) {
         text++;
