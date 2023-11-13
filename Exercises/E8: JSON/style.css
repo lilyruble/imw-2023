@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: #31C121;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 25em;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, 40%);
+    left: 50%;
+    right: 50%;
+    padding: 2em;
+    border-radius: 0.8em;
+}
+
+.app-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 8.75em;
+}
+
+app-title {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+}
+
+input#amount {
+    font-weight: 400;
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid black;
+    color: #31C121;
+    margin-bottom: 2em;
+    padding: 0.5em;
+}
+
+input#amount:focus {
+    color: #31C121;
+    border-color: #31C121;
+}
+
+.dropdowns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+select {
+    width: 100%;
+    padding: 0.6em;
+    font-size: 1 em;
+    border-radius: 0.2em;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #31C121;
+}
+
+select option {
+    background-color: white;
+    color: black;
+}
+
+button {
+    font-size: 1em;
+    width: 100%;
+    background-color: #31C121;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-radius: 0.3em;
+    color: white;
+    font-weight: 600;
+}
+
+#result {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1em;
+    color: black;
+    background-color: lightgreen;
+    padding: 0.8em 0;
+}

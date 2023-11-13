@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery Library-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="app-details">
+            <img src="app-icon.svg" alt="currency exchange icon">
+            <h1 class="app-title">Currency Exchange</h1>
+        </div>
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" value="100">
+        <div class="dropdowns">
+            <select name="from" id="from-currency-select"></select>
+            <select name="to" id="to-currency-select"></select>
+        </div>
+        <button id="convert-button">Convert</button>
+        <p id="result"></p>
+    </div>
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+    <script src="api-key.js"></script>
+    <script src="currency-codes.js"></script>
+</body>
+
+</html>

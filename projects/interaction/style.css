@@ -1,0 +1,22 @@
+.headline {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+    top: 100px;
+    left: 100px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 5px 3px 7px 1px #000000
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
