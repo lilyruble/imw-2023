@@ -1,8 +1,11 @@
+// Youtube Tutorial from https://www.youtube.com/watch?v=ZD_Yft-Qd9Y&t=1204s&ab_channel=CodingArtist
+
 let api = `https://v6.exchangerate-api.com/v6/${"99490b6c58fdedd0090ac659"}/latest/USD`;
 
 const fromDropDown = document.getElementById("from-currency-select");
 const toDropDown = document.getElementById("to-currency-select");
 
+// Currency Array
 currencies = [
     "USD",
     "AUD",
@@ -71,7 +74,7 @@ let convertCurrency = () => {
 
 
 
-
+// Convert Button Interaction
 document
     .querySelector("#convert-button")
     .addEventListener("click", convertCurrency);
