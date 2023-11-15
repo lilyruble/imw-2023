@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-zoom:1.0">
+  <meta charset="utf-8">
+  <title>Interaction Process</title>
+</head>
+
+<body>
+  <div class="process-template">
+    <!-- Start of title -->
+    <div class="title">
+      <h1>Interaction Process</h1>
+    </div>
+    <!-- End of title -->
+    <!-- Start of content -->
+    <div class="content">
+      <!-- Start of a section -->
+      <div class="section">
+        <h2>Concept Ideation</h2>
+        <p>
+          Originally I had looked into parallax scrolling, and wanted to evolve my idea around storytelling. However,
+          when consulting with Prof. Ha I realized that my idea was too centered around the content of my website rather
+          than the interaction element by itself. By suggestion, I looked more into the history of scrolling, infinite
+          scroll, and the scroll bar. I was also inspired to use a play of the word scroll or to even take inspiration
+          from everyday life. So I came upon the concept I have known as doom scrolling. By definition, it is the act of
+          consuming negative media on the internet that can have a huge impact on your mental health. Prof. Ha also
+          recommended that I source live news using JSON and API that we learned that day to enhance my idea even
+          farther.
+          <br>
+          <br>
+          Overall, I wanted to encapsulate the idea of doom scrolling in my website by having a page that is populated
+          with bad news the further you scroll to embody the user experience of literally entering the void of the doom
+          scroll abyss.
+        </p>
+        <!-- Start of a section -->
+        <!-- Start of image with caption -->
+        <figure>
+          <img src="images/notes.jpeg" alt="handwritten notes" width="100%">
+          <figcaption>Notes based on feedback and ideation process</figcaption>
+        </figure>
+        <!-- End of image with caption -->
+      </div>
+      <!-- End of a section -->
+      <!-- Start of a new section -->
+      <div class="section">
+        <h2>Visual Inspiration</h2>
+        <p>
+          For aesthetics I really liked the overcrowded look of the blank windows website that was recommended as a
+          resource for the project. I eventually used this look in my design by recreating the white boxes and a shadow
+          to add depth to the look.
+          <br>
+          <br>
+          I also created an are.na account to gain inspiration for the different ways people have utilized the scroll
+          bar, but deviated my idea from these websites.
+          <br>
+          <br>
+          I also found inspiration from the research that I did based on the impact of the infinite scroll. Infinite
+          scroll affects your mental health, attention span, and can even contribute to polarization and extremism. By
+          incorporating the infinite scroll, I wanted it to be a symbol of never ending escape from bad news once you go
+          down the rabbit hole. I want the user to feel overwhelmed with the nasty headlines the further they scroll. I
+          also wanted the news to get worse the deeper the user goes.
+        </p>
+        <!-- Start of a section -->
+        <!-- Start of image with caption -->
+        <figure>
+          <img src="images/Inspiration.png" alt="Moodboard" width="100%">
+          <figcaption>Inspiration moodboard</figcaption>
+        </figure>
+        <!-- End of image with caption -->
+      </div>
+      <!-- End of a new section -->
+    </div>
+    <!-- Start of a new section -->
+    <div class="section">
+      <h2>Process</h2>
+      <p>
+        I originally wanted the visuals to be screengrabs of the articles themselves but realized that would be a lot
+        harder when using just data from world news apis. So, I went with the simple white boxes and Times New Roman
+        typeface to give it the classic newspaper look and a drop shadow to add some visual depth.
+        <br>
+        <br>
+      <figure>
+        <img src="images/Prototype.png" alt="prototype of figma file" width="50%">
+        <figcaption>Original Vision of what it would look like</figcaption>
+      </figure>
+      <br>
+      <br>
+      <figure>
+        <img src="images/v1.png" alt="black and white box with times new roman text" width="100%">
+        <figcaption>The standard box that I evolved the rest around</figcaption>
+      </figure>
+      For the JavaScript part I decided to create scope variables specifically for the batchsize which would gradually
+      increase how much news populates the page as the user scrolls more. I also used an array for the range of
+      sentiment so that the content would get progressively more negative. I used WorldNewsCatcher.com for the api and
+      they had a rating system for the content of their news with 0.9 being happy to -0.9 being horrible. I was also
+      able to filter out languages and countries from the documentation guide that the api provided. I have it set to
+      the US, UK, Canada, and France for now. I also created a function to make the boxes a variation of sizes. I also
+      utilized a scroll function to ensure that the website knows when to reload a new batch of news once the user
+      reaches the bottom of the window.
+      <br>
+      <br>
+      <figure>
+        <img src="images/API.png" alt="World News Catcher API site" width="80%">
+        <figcaption>World News Catcher API site</figcaption>
+      </figure>
+      <br>
+      <br>
+      There were two issues I ran into as well which is that I have a daily amount of data requests from the free api
+      website. To continue testing my site I created a for loop with fake content to ensure the scroll interaction was
+      working.
+      </p>
+      <!-- End of content -->
+    </div>
+</body>
+
+</html>

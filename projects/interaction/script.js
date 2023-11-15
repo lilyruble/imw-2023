@@ -92,20 +92,20 @@ async function GetArticles(callback) {
     }
 
     // TO USE REAL NEWS DATA
-    // $.ajax({
-    //     url: URL + "?max-sentiment=" + maxSentiment + "&min-sentiment=" + minSentiment + "&source-countries=us,uk,ca,fr&number=" + size + "&api-key=" + APIKEY,
-    //     type: 'GET',
-    //     dataType: 'json',
-    //     success: callback
-    // })
+    $.ajax({
+        url: URL + "?max-sentiment=" + maxSentiment + "&min-sentiment=" + minSentiment + "&source-countries=us,uk,ca,fr&number=" + size + "&api-key=" + APIKEY,
+        type: 'GET',
+        dataType: 'json',
+        success: callback
+    })
 
     // TO USE DUMMY DATA
-    var result = { "news": [] }
-    for (var i = 0; i < size; i++) {
-        result["news"].push({})
-        result["news"][i].title = "Dummy title";
-        result["news"][i].text = "Dummy text!!!!!!!!!!!!";
-    }
+    // var result = { "news": [] }
+    // for (var i = 0; i < size; i++) {
+    //     result["news"].push({})
+    //     result["news"][i].title = "Dummy title";
+    //     result["news"][i].text = "Dummy text!!!!!!!!!!!!";
+    // }
 
     callback(result)
 };
