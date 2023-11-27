@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts - Bebas Neue  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Vina+Sans&display=swap" rel="stylesheet">
+
+    <title>R5: Website</title>
+</head>
+
+<body>
+    <section class="container">
+        <div id="toolbar">
+            <h1>Express Yourself!</h1>
+            <label for="stroke">Stroke</label>
+            <input type="color" name='stroke' id="stroke">
+            <label>Line Width</label>
+            <input id="lineWidth" name='lineWitdth' type="number" value="5">
+            <button id="clear">Clear</button>
+        </div>
+        <div class="drawing-board">
+            <canvas id="drawing-board"></canvas>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
