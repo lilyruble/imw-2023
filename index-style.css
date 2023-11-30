@@ -1,0 +1,82 @@
+body {
+    overflow-x: scroll infinite;
+    overflow-y: hidden;
+    background-image: url('imgs/background.jpg');
+    padding: 0;
+    margin: 0;
+    width: 5000px;
+    height: 100vh;
+}
+
+
+.elements {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#readings {
+    width: 270px;
+    height: 340px;
+}
+
+#chain-link {
+    width: 300px;
+    height: 400px;
+    mix-blend-mode: screen;
+}
+
+#newspaper {
+    width: 500px;
+    height: 550px;
+}
+
+#tarot-card {
+    width: 100px;
+    height: 200px;
+}
+
+#map {
+    width: 400px;
+    height: 350px;
+}
+
+#art-frame {
+    width: 650px;
+    height: 400px;
+}
+
+#fonts {
+    width: 350px;
+    height: 200px;
+}
+
+#magazine {
+    width: 400px;
+    height: 550px;
+}
+
+#markers {
+    width: 250px;
+    height: 300px;
+}
+
+#phone {
+    width: 200px;
+    height: 300px;
+}
+
+#money {
+    width: 100px;
+    height: 100px;
+}
+
+#flowers {
+    width: 300px;
+    height: 500px;
+}
+
+#process-notes {
+    width: 700px;
+    height: 600px;
+}
