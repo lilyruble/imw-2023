@@ -4,7 +4,7 @@ body {
     background-image: url('imgs/background.jpg');
     padding: 0;
     margin: 0;
-    width: 5000px;
+    width: 5500px;
     height: 100vh;
 }
 
@@ -15,9 +15,19 @@ body {
     position: relative;
 }
 
+#journal {
+    width: 400px;
+    height: 550px;
+}
+
 #readings {
     width: 270px;
     height: 340px;
+}
+
+#cards {
+    width: 400px;
+    height: 500px;
 }
 
 #chain-link {
