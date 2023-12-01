@@ -16,13 +16,13 @@ body {
 }
 
 #journal {
-    width: 400px;
-    height: 550px;
+    max-width: 10%;
+    max-height: 10%;
 }
 
 #readings {
-    width: 270px;
-    height: 340px;
+    max-width: 10%;
+    max-height: 10%;
 }
 
 #cards {
@@ -89,4 +89,20 @@ body {
 #process-notes {
     width: 700px;
     height: 600px;
+}
+
+@media (max-width:2000px) {
+    imgs {
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+@media (max-width: 530px) {
+    imgs {
+        width: 50%;
+        height: 50%;
+
+    }
 }
