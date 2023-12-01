@@ -4,6 +4,18 @@
 <head>
     <title>Lily's Index</title>
     <link rel="icon" type="image/png" href="imgs/favicon.png">
+
+    <!-- jQuery Library-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js" async></script>
+
+    <!-- Google Fonts - Nova Square Typeface -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
     <link rel="stylesheet" href="index-style.css">
 </head>
 
@@ -14,9 +26,9 @@
             <img src="imgs/about.png" id="journal" alt="image scan of red journal">
             <img src="imgs/Readings.png" id="readings" alt="image of book">
             <img src="imgs/links.png" id="chain-link" alt="chain link necklace">
-            <img src="imgs/PROJECTS/interaction.png" id="newspaper" alt="image scan of newspaper">
-            <img src="imgs/PROJECTS/poster.png" id="tarot-card" alt="image scan of tarot card">
             <img src="imgs/PROJECTS/storybook.png" id="map" alt="image of map">
+            <img src="imgs/PROJECTS/poster.png" id="tarot-card" alt="image scan of tarot card">
+            <img src="imgs/PROJECTS/interaction.png" id="newspaper" alt="image scan of newspaper">
             <img src="imgs/EX/2. Grid.png" id="art-frame" alt="image scan of frame">
             <img src="imgs/EX/3. Fonts.png" id="fonts" alt="image scan of letters">
             <img src="imgs/EX/4. flexbox.png" id="magazine" alt="image scan of magazine">
@@ -26,10 +38,19 @@
             <img src="imgs/EX/8. JSON.webp" id="money" alt="image scan of money">
             <img src="imgs/favicon-symbol.png" id="flowers" alt="image scan of flowers">
             <img src="imgs/PROCESS/story book process.png" id="process-notes" alt="image scan of handrawn notes">
-
         </div>
-    </div>
-    <script src="index-script.js"></script>
+        <div class="cursor">
+            <div class="cursor-inner">
+                <div class="cursor-text" data-splitting>Lily's - Index - Page - </div>
+            </div>
+        </div>
+        <!-- Split Data JS Link -->
+        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+        <!-- GSAP Link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+        <!-- Link to JS File -->
+        <script src="index-script.js"></script>
+
 </body>
 
 </html>

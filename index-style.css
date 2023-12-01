@@ -1,13 +1,21 @@
 body {
+    font-family: 'Nova Square', sans-serif;
     overflow-x: scroll infinite;
     overflow-y: hidden;
     background-image: url('imgs/background.jpg');
     padding: 0;
     margin: 0;
-    width: 5500px;
+    width: 6200px;
     height: 100vh;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
 
 .elements {
     margin: 0;
@@ -16,82 +24,127 @@ body {
 }
 
 #journal {
-    max-width: 10%;
-    max-height: 10%;
+    position: relative;
+    width: 400px;
+    height: 550px;
+    top: 200px;
 }
 
 #readings {
-    max-width: 10%;
-    max-height: 10%;
+    position: relative;
+    width: 270px;
+    height: 340px;
+    top: -50px;
+    transform: rotate(-15deg);
 }
 
-#cards {
-    width: 400px;
-    height: 500px;
-}
 
 #chain-link {
+    position: relative;
     width: 300px;
     height: 400px;
     mix-blend-mode: screen;
 }
 
-#newspaper {
-    width: 500px;
-    height: 550px;
+#map {
+    padding: 100px;
+    position: relative;
+    width: 400px;
+    height: 350px;
+    top: 150px;
+    transform: rotate(30deg);
 }
 
 #tarot-card {
-    width: 100px;
-    height: 200px;
+    position: relative;
+    width: 180px;
+    height: 300px;
+    padding: 80px;
+    top: -120px;
+    transform: rotate(5deg);
 }
 
-#map {
-    width: 400px;
-    height: 350px;
+#newspaper {
+    position: relative;
+    width: 500px;
+    height: 550px;
+    transform: rotate(-25deg);
 }
+
 
 #art-frame {
+    position: relative;
     width: 650px;
     height: 400px;
+    top: 70px;
+    transform: rotate(5deg);
+
 }
 
 #fonts {
+    position: relative;
     width: 350px;
     height: 200px;
+    top: 150px;
 }
 
 #magazine {
+    position: relative;
     width: 400px;
     height: 550px;
+    transform: rotate(-10deg);
+
 }
 
 #markers {
+    position: relative;
+    padding: 50px;
     width: 250px;
     height: 300px;
+    top: 100px;
+}
+
+#cards {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    top: 150px;
 }
 
 #phone {
+    position: relative;
     width: 200px;
     height: 300px;
+    padding: 50px;
+    top: 50px;
+    transform: rotate(25deg);
 }
 
 #money {
+    position: relative;
     width: 100px;
     height: 100px;
+    padding: 50px;
+    top: -200px;
 }
 
 #flowers {
+    position: relative;
     width: 300px;
     height: 500px;
+    top: 50px;
 }
 
 #process-notes {
+    position: relative;
     width: 700px;
     height: 600px;
+    top: 200px;
+    transform: rotate(15deg);
+
 }
 
-@media (max-width:2000px) {
+/* @media (max-width:2000px) {
     imgs {
         width: 100%;
         height: 100%;
@@ -101,8 +154,32 @@ body {
 
 @media (max-width: 530px) {
     imgs {
-        width: 50%;
-        height: 50%;
+        width: 50%%;
+        height: 0%;
 
     }
+} */
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.cursor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+
+.cursor-text {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.cursor-text .char {
+    position: absolute !important;
 }
