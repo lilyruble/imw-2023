@@ -2,6 +2,7 @@
     /* Remove default browser spacing */
     margin: 0;
     padding: 0;
+    font-family: 'Sometype Mono', monospace;
 }
 
 body {
@@ -9,19 +10,26 @@ body {
     /* Add spacing around the entire page */
     font-size: 12px;
     /* Setting baseline font size */
+
 }
 
 /* Start of text sizes */
 h1 {
-    font-size: 4em;
+    font-size: 5em;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2em;
 }
 
 p {
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 

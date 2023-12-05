@@ -11,8 +11,6 @@ body {
 
 a {
     text-decoration: none;
-    border: 5px solid white;
-    display: inline-block;
 }
 
 ul {
@@ -178,6 +176,7 @@ ul {
     top: 0;
     z-index: 1;
     color: white;
+    pointer-events: none;
 }
 
 .cursor-text {
