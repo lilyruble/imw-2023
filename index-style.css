@@ -196,3 +196,17 @@ ul {
         white-space: nowrap;
     }
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        zoom: 2;
+        white-space: nowrap;
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    body {
+        zoom: 2;
+        white-space: nowrap;
+    }
+} */
