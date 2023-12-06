@@ -1,7 +1,7 @@
 body {
     font-family: 'Nova Square', sans-serif;
     overflow-x: scroll infinite;
-    overflow-y: scroll;
+    overflow-y: hidden;
     background-image: url('imgs/background.jpg');
     background-size: contain;
     padding: 0;
@@ -27,10 +27,6 @@ ul {
     min-width: 100%;
 }
 
-#journal-tag {
-    position: relative;
-    top: 200px;
-}
 
 #journal {
     position: relative;
@@ -193,10 +189,124 @@ ul {
     position: absolute !important;
 }
 
-@media screen and (max-width: 600px) {
-    body {
-        zoom: 2;
-        white-space: nowrap;
+@media screen and (max-width: 400px) {
+    #journal {
+        width: 200px;
+        height: 225px;
+    }
+
+    #readings {
+        position: relative;
+        width: 135px;
+        height: 170px;
+        top: -50px;
+        transform: rotate(-15deg);
+    }
+
+
+    #chain-link {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: screen;
+    }
+
+    #map {
+        padding: 100px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 150px;
+        transform: rotate(30deg);
+    }
+
+    #tarot-card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 80px;
+        top: -120px;
+        transform: rotate(5deg);
+    }
+
+    #newspaper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: rotate(-25deg);
+    }
+
+
+    #art-frame {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 70px;
+        transform: rotate(5deg);
+
+    }
+
+    #fonts {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 150px;
+    }
+
+    #magazine {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: rotate(-10deg);
+
+    }
+
+    #markers {
+        position: relative;
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+        top: 100px;
+    }
+
+    #cards {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 150px;
+    }
+
+    #phone {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        top: 50px;
+        transform: rotate(25deg);
+    }
+
+    #money {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        top: -200px;
+    }
+
+    #flowers {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 50px;
+    }
+
+    #process-notes {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 200px;
+        transform: rotate(15deg);
+
     }
 }
 
