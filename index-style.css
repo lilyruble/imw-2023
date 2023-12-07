@@ -18,6 +18,31 @@ ul {
     list-style-type: none;
 }
 
+.content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    /* opacity: 0;
+    transition: 0.6s; */
+}
+
+/* .content :hover {
+    opacity: 1;
+} */
+
+.content h2 {
+    font-size: 2em;
+    color: white;
+    margin-bottom: 15px;
+}
+
 .elements {
     margin: 0;
     padding: 0;
@@ -27,6 +52,10 @@ ul {
     min-width: 100%;
 }
 
+.elements :hover {
+    opacity: 70%;
+    transition: 0.6s;
+}
 
 #journal {
     position: relative;
@@ -148,28 +177,6 @@ ul {
 
 }
 
-/* @media (max-width:2000px) {
-    imgs {
-        width: 100%;
-        height: 100%;
-
-    }
-}
-
-@media (max-width: 530px) {
-    imgs {
-        width: 50%%;
-        height: 0%;
-
-    }
-} */
-
-/* img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-} */
-
 .cursor {
     position: absolute;
     left: 0;
@@ -189,148 +196,17 @@ ul {
     position: absolute !important;
 }
 
-@media screen and (max-width: 400px) {
-    #journal {
-        width: 200px;
-        height: 225px;
-    }
 
-    #readings {
-        position: relative;
-        width: 135px;
-        height: 170px;
-        top: -50px;
-        transform: rotate(-15deg);
-    }
-
-
-    #chain-link {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        mix-blend-mode: screen;
-    }
-
-    #map {
-        padding: 100px;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        top: 150px;
-        transform: rotate(30deg);
-    }
-
-    #tarot-card {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding: 80px;
-        top: -120px;
-        transform: rotate(5deg);
-    }
-
-    #newspaper {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transform: rotate(-25deg);
-    }
-
-
-    #art-frame {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        top: 70px;
-        transform: rotate(5deg);
-
-    }
-
-    #fonts {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        top: 150px;
-    }
-
-    #magazine {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        transform: rotate(-10deg);
-
-    }
-
-    #markers {
-        position: relative;
-        padding: 50px;
-        width: 100%;
-        height: 100%;
-        top: 100px;
-    }
-
-    #cards {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        top: 150px;
-    }
-
-    #phone {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding: 50px;
-        top: 50px;
-        transform: rotate(25deg);
-    }
-
-    #money {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        padding: 50px;
-        top: -200px;
-    }
-
-    #flowers {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        top: 50px;
-    }
-
-    #process-notes {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        top: 200px;
-        transform: rotate(15deg);
-
+@media screen and (max-width: 100px) {
+    body {
+        zoom: 1;
+        white-space: nowrap;
     }
 }
 
 @media screen and (max-width: 600px) {
     body {
-        img {
-            width: 100%;
-            height: 100%
-        }
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    body {
-        img {
-            width: 80%;
-            height: 80%
-        }
-    }
-}
-
-/* @media screen and (max-width: 600px) {
-    body {
-        zoom: 2;
+        zoom: 1.5;
         white-space: nowrap;
     }
-} */
+}
