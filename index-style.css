@@ -14,7 +14,8 @@ a {
     position: relative;
     text-align: center;
     text-decoration: none;
-    color: rgba (0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0);
+    display: inline-block;
 }
 
 ul {
@@ -34,8 +35,9 @@ ul {
     margin-bottom: 15px;
 }
 
-a :hover {
-    color: rgb (0, 0, 0);
+a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
 }
 
 .elements {
@@ -47,53 +49,56 @@ a :hover {
     min-width: 100%;
 }
 
-.elements :hover {
+.elements a:hover img {
     opacity: 70%;
     transition: 0.6s;
 }
 
-#journal {
-    position: relative;
+#journal img {
     width: 400px;
     height: 550px;
 }
 
 #readings {
-    position: relative;
+    top: -50px;
+}
+
+#readings img {
     width: 270px;
     height: 340px;
-    top: -50px;
     transform: rotate(-15deg);
 }
 
 
-#chain-link {
-    position: relative;
+#chain-link img {
     width: 300px;
     height: 400px;
     mix-blend-mode: screen;
 }
 
 #map {
+    top: 150px;
+}
+
+#map img {
     padding: 100px;
-    position: relative;
     width: 400px;
     height: 350px;
-    top: 150px;
     transform: rotate(30deg);
 }
 
 #tarot-card {
-    position: relative;
+    top: -120px;
+}
+
+#tarot-card img {
     width: 180px;
     height: 300px;
     padding: 80px;
-    top: -120px;
     transform: rotate(5deg);
 }
 
-#newspaper {
-    position: relative;
+#newspaper img {
     width: 500px;
     height: 550px;
     transform: rotate(-25deg);
@@ -101,23 +106,26 @@ a :hover {
 
 
 #art-frame {
-    position: relative;
+    top: 70px;
+}
+
+#art-frame img {
     width: 650px;
     height: 400px;
-    top: 70px;
     transform: rotate(5deg);
 
 }
 
 #fonts {
-    position: relative;
-    width: 350px;
-    height: 200px;
     top: 150px;
 }
 
-#magazine {
-    position: relative;
+#fonts img {
+    width: 350px;
+    height: 200px;
+}
+
+#magazine img {
     width: 400px;
     height: 550px;
     transform: rotate(-10deg);
@@ -125,49 +133,61 @@ a :hover {
 }
 
 #markers {
-    position: relative;
-    padding: 50px;
-    width: 250px;
-    height: 300px;
     top: 100px;
 }
 
+#markers img {
+    padding: 50px;
+    width: 250px;
+    height: 300px;
+}
+
 #cards {
-    position: relative;
-    width: 400px;
-    height: 500px;
     top: 150px;
 }
 
+#cards img {
+    width: 400px;
+    height: 500px;
+}
+
 #phone {
-    position: relative;
+    top: 50px;
+}
+
+#phone img {
     width: 220px;
     height: 300px;
     padding: 50px;
-    top: 50px;
     transform: rotate(25deg);
 }
 
 #money {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    padding: 50px;
     top: -200px;
 }
 
+#money img {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+}
+
 #flowers {
-    position: relative;
-    width: 300px;
-    height: 500px;
     top: 50px;
 }
 
+#flowers img {
+    width: 300px;
+    height: 500px;
+}
+
 #process-notes {
-    position: relative;
+    top: 200px;
+}
+
+#process-notes img {
     width: 700px;
     height: 600px;
-    top: 200px;
     transform: rotate(15deg);
 
 }
