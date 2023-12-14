@@ -69,6 +69,9 @@ a:hover {
     transform: rotate(-15deg);
 }
 
+#chain-link {
+    top: 150px;
+}
 
 #chain-link img {
     width: 300px;
