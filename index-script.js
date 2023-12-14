@@ -46,24 +46,3 @@ function init() {
 window.addEventListener("load", function () {
     init();
 })
-
-// Change Text Content on Hover
-
-// $(document).ready(function () {
-//     $("#readings").hover(function () {
-//         $(this).html("Readings-Readings");
-//     }, function () {
-//         $(this).html("Lily's-Index-Page");
-//     });
-// });
-
-$(document).ready(function () {
-    $("#readings").hover(
-        function () {
-            $(this).html("Readings - Readings -");
-        },
-        function () {
-            $(this).html("Lily's - Index - Page - ");
-        }
-    );
-});
